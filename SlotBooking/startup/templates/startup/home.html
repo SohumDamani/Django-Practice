@@ -35,7 +35,10 @@
             <a href="{% url 'delete-room' room.id %}">Delete</a>
             <span>@{{room.host.username}}</span>
             <h5>{{room.id}} -- <a href="{% url 'room' room.id %}"> {{room.name}} </a></h5>
+
             <small>{{room.topic.name}}</small>
+            <br>
+            <small>{{room.description}} </small>
             <hr>
 
         </div>
